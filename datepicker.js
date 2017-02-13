@@ -133,12 +133,14 @@ var datetimePicker = {
 
   selectedDate() {
       var items = document.getElementsByClassName('slot');
-      self.datetimePicker.currentMonth = self.datetimePicker.currentMonth + 1;
+      var currentMonth = self.datetimePicker.currentMonth + 1;
       for (var i = 0; i < items.length; i++) {
         items[i].classList.remove('selected');
       }
       this.classList.add("selected");
-      self.input.value = self.datetimePicker.currentYear +'-'+ self.datetimePicker.currentMonth +'-'+ this.innerText;
+      currentMonth = currentMonth < 10 ? '0' + currentMonth : currentMonth;
+      this.innerText = parseInt(this.innerText) < 10 ? '0' + this.innerText : this.innerText;
+      self.input.value = self.datetimePicker.currentYear +'-'+ currentMonth +'-'+ this.innerText;
   },
 
   date (date, timeless){
