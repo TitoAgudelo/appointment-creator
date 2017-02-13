@@ -2,16 +2,20 @@
   <head>
   	<link rel="stylesheet" type="text/css" href="datepicker.css">
   	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  	<script src="https://use.fontawesome.com/f0d02cb679.js"></script>
   </head>
   <body>
   	<div>
-  		<h4>Welcome to the Appointment Creator!</h4>
+  		<h2>Welcome to the Appointment Creator!</h2>
   	</div>
 	<div>
-		<p>Please </p>
+		<p>Please start by selecting a day for your appointment:</p>
 	</div>
     <div class="datepicker-wrapper" date-wrapper>
-  		<input class="calendar" placeholder="calendar" data-open>
+		<div>
+			<input class="calendar" placeholder="Choose a date" data-open>
+			<i class="fa fa-calendar-o" aria-hidden="true"></i>
+		</div>
   		<div class="datepicker-container" data-calendar>
   			<div class="datepicker-nav" data-nav></div>
   			<div class="datepicker-weekdays" data-week>

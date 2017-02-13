@@ -1,7 +1,3 @@
-/***
-  author: Tito Agudelo
-  datepicker
- ***/
 'use strict';
 var self = this,
     config = {};
@@ -222,6 +218,3 @@ datetimePicker.declare.prototype = {
         firstDayOfWeek: 1
     }
 };
-
-//datetimePicker.getDaysForMonth(initialYear, initialMonth);
-//datetimePicker.init();
